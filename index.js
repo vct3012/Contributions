@@ -7,7 +7,7 @@ const path = "./data.json";
 
 const isValidDate = (date) => {
   const startDate = moment("2022-01-01");
-  const endDate = moment("2025-01-02"); // Cập nhật ngày kết thúc
+  const endDate = moment("2025-01-07"); // Cập nhật ngày kết thúc
   return date.isBetween(startDate, endDate, null, "[]");
 };
 
@@ -43,4 +43,4 @@ const makeCommits = async (n) => {
   await git.push();
 };
 
-makeCommits(50000);
+makeCommits(5000);
