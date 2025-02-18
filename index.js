@@ -6,7 +6,7 @@ import random from "random";
 const path = "./data.json";
 
 const isValidDate = (date) => {
-  const startDate = moment("2022-01-01");
+  const startDate = moment("2025-01-08");
   const endDate = moment("2025-02-18"); // Cập nhật ngày kết thúc
   return date.isBetween(startDate, endDate, null, "[]");
 };
@@ -43,4 +43,4 @@ const makeCommits = async (n) => {
   await git.push();
 };
 
-makeCommits(5000);
+makeCommits(500);
